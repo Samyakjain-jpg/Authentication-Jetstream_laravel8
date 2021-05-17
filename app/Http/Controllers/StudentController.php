@@ -8,6 +8,6 @@ class StudentController extends Controller
 {
     public function name()
     {
-        echo "My name is samyak";
+        echo "My name is samyak and the whole whold";
     }
 }
