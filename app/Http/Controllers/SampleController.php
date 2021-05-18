@@ -10,7 +10,7 @@ class SampleController extends Controller
     //first method
     public function method1()
     {
-        //..write code
+       
     }
       public function method2()
     {
