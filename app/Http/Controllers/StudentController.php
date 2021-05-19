@@ -37,7 +37,7 @@ class StudentController extends Controller
      public function selectdata()
     {
         $students = student::all(); //get method is also use
-        return view("student.list-teacher",[
+       return view("student.list-teacher",[
             "students" => $students
         ]);
     }

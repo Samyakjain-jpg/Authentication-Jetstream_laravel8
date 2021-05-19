@@ -12,5 +12,9 @@ class TeacherController extends Controller
     {   
         return $teacher;
     }
+    public function sample()
+    {
+        echo "This is sample message";
+    }
 
 }

@@ -36,3 +36,19 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     echo $teacher;
 // });
 Route::get("/teacher/{teacher}",[TeacherController::class,("index")]); 
+
+//URL Generation Helper Functions in Laravel
+Route::get("/test", function()
+{
+    //echo "This is test route";
+    //echo url ("sample");
+    //echo url()->current();
+    //echo url()->full();
+    //echo route("sample.method");
+    echo action([TeacherController::class,("sample")]);
+});
+Route::get("/call/{id}", function($id)
+{
+    echo "This is call route " .$id;
+});
+Route::get("sample",[TeacherController::class,("sample")])->name("sample.method");
